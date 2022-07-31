@@ -189,7 +189,7 @@ const DetailView = ({ open, handleClose, forecastData }) => {
             >
                 <Item>
                     <div>{fetchShortDayNameByDate(new Date(day.date))}</div>
-                    <div><img src={day.day.condition.icon}/></div>
+                    <div><img src={day.day.condition.icon} alt={'Weather Icon'}/></div>
                     <div>
                         <span className={!tempInCelcius && classes.greyColor} >{Math.round(day.day.avgtemp_c)}&deg;</span>&nbsp;&nbsp;
                         <span className={tempInCelcius && classes.greyColor}>{

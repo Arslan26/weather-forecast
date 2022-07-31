@@ -1,11 +1,11 @@
 import './App.css';
 
 import { styled } from '@mui/material/styles';
-import {Box, debounce, Grid, TextField} from "@mui/material";
+import {Box, Grid, TextField} from "@mui/material";
 import Paper from '@mui/material/Paper';
-import {useCallback, lazy, useState} from "react";
+import {lazy, useState} from "react";
 import {validInput} from "./utils/generic";
-import {searchCities, fetchForecastData} from "./services/weather";
+import {fetchForecastData} from "./services/weather";
 import DetailView from "./components/Detail";
 const CityList = lazy(() => import("./components/CityList"));
 
